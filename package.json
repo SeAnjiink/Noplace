@@ -1,0 +1,24 @@
+{
+  "name": "noplace",
+  "version": "0.1.0",
+  "description": "NoPlace - Anti-social media for Gen Z",
+  "private": true,
+  "workspaces": [
+    "web",
+    "mobile",
+    "packages/types",
+    "packages/utils"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.3.0"
+  }
+}

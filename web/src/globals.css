@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Glitch effect */
+@keyframes glitch-text {
+  0% {
+    text-shadow: -2px 0 #ff006e, 2px 0 #00ffff;
+  }
+  20% {
+    text-shadow: -2px 0 #ff006e, 2px 0 #00ffff;
+  }
+  40% {
+    text-shadow: -2px 0 #c71585, 2px 0 #00ffff;
+  }
+  60% {
+    text-shadow: -2px 0 #ff006e, 2px 0 #00ffff;
+  }
+  100% {
+    text-shadow: -2px 0 #ff006e, 2px 0 #00ffff;
+  }
+}
+
+.glitch-text {
+  animation: glitch-text 0.3s ease-in-out;
+}
+
+/* Smooth gradient bg */
+.bg-gradient-dark {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2d1b4e 100%);
+}
